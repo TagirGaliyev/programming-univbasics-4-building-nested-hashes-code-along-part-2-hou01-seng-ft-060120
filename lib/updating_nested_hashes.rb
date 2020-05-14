@@ -1,3 +1,4 @@
+require "pry"
 def update_status
    epic_tragedy = {
       :montague => {
@@ -72,4 +73,5 @@ end
 ept = update_status
 for key in ept
   puts ept[key][:hero][:status]
+  binding.pry
 end
