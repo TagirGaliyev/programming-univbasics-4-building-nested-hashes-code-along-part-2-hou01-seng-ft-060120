@@ -23,10 +23,9 @@ def update_status
 
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
-
-
-
-
+  epic_tragedy.each_key do |key|
+    key === :capulet ? epic_tragedy[key][:heroine][:status] = "dead" : epic_tragedy[key][:hero][:status] = "dead"
+  end
   # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
   epic_tragedy
 end
@@ -60,15 +59,14 @@ def add_characters
    #   - The first hash should have the :name key set to "Prince Escalus"
    #   - The second hash should have the :name key set to "Apothecary"
    # Code your solution here:
-
-
-
+   epic_tragedy[:additional_characters] = [
+     {
+       :name => "Prince Escalus"
+     }
+     {
+       :name => "Apothecary"
+     }
+   ] 
    # After your code, the following line will return the altered hash
    epic_tragedy
 end
-
-ept = update_status
-ept.each_key do |key|
-  key === :capulet ? ept[key][:heroine][:status] = "dead" : ept[key][:hero][:status] = "dead"
-end
-puts ept
