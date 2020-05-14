@@ -72,5 +72,5 @@ end
 
 ept = update_status
 ept.each do |key|
-  puts key
+  puts ept[key]
 end
