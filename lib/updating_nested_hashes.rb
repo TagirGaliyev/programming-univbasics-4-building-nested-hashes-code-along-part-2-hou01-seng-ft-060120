@@ -63,14 +63,12 @@ def add_characters
 
 
 
-
-
-
    # After your code, the following line will return the altered hash
    epic_tragedy
 end
 
 ept = update_status
 ept.each_key do |key|
-  puts key === :capulet ? ept[key][:heroine][:status] : ept[key][:hero][:status]
+  key === :capulet ? ept[key][:heroine][:status] : ept[key][:hero][:status] = "dead"
 end
+puts ept
