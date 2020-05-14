@@ -71,6 +71,6 @@ def add_characters
 end
 
 ept = update_status
-for key in ept do
+for key in ept do |key|
   puts key === :capulet ? ept[key][:heroine][:status] : ept[key][:hero][:status]
 end
