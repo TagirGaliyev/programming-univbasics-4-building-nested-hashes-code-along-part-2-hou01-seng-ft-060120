@@ -71,5 +71,5 @@ end
 
 ept = update_status
 for key in ept do
-  puts ept[key]
+  puts ept[0]
 end
