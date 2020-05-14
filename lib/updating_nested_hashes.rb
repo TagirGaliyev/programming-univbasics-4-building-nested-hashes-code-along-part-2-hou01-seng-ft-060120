@@ -70,4 +70,6 @@ def add_characters
 end
 
 ept = update_status
-puts ept
+for key in ept do
+  puts key
+end
