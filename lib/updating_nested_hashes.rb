@@ -74,5 +74,5 @@ ept = update_status
 ept.each do |key, value|
   puts key
   puts value
-  puts ept[key]
+  puts ept[key][:herp][:status]
 end
