@@ -69,6 +69,6 @@ end
 
 ept = update_status
 ept.each_key do |key|
-  key === :capulet ? ept[key][:heroine][:status] : ept[key][:hero][:status] = "dead"
+  key === :capulet ? ept[key][:heroine][:status] = "dead" : ept[key][:hero][:status] = "dead"
 end
 puts ept
