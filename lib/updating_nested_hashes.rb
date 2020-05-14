@@ -72,6 +72,5 @@ end
 
 ept = update_status
 for key in ept
-  puts ept[key][:hero][:status]
   binding.pry
 end
