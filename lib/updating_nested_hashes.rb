@@ -71,6 +71,6 @@ def add_characters
 end
 
 ept = update_status
-for key in ept
-  binding.pry
+ept.each do |key|
+  puts key
 end
