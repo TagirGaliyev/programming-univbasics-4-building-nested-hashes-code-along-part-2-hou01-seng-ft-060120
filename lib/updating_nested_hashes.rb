@@ -72,7 +72,9 @@ end
 
 ept = update_status
 ept.each do |key, value|
-  puts key
-  puts value
-  puts ept[key][:hero][:status]
+  if key === "capulet"
+    puts ept[key][:heroine][:status]
+  else
+    puts ept[key][:hero][:status]
+  end
 end
