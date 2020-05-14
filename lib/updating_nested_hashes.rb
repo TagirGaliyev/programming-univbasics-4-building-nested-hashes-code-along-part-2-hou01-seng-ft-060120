@@ -70,4 +70,6 @@ def add_characters
 end
 
 ept = update_status
-puts ept[:montague][:hero][:status]
+for key in ept
+  puts ept[key][:hero][:status]
+end
