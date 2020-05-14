@@ -70,6 +70,4 @@ def add_characters
 end
 
 ept = update_status
-for key in ept do
-  puts ept[0]
-end
+puts ept[:montague]
