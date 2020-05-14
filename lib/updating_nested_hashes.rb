@@ -71,5 +71,5 @@ end
 
 ept = update_status
 for key in ept do
-  puts key[0]
+  puts ept[key][:hero]
 end
