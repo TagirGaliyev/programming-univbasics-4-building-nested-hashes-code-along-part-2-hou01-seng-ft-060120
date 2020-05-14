@@ -71,6 +71,7 @@ def add_characters
 end
 
 ept = update_status
-ept.each do |key|
-  puts ept[key]
+ept.each do |key, value|
+  puts key
+  puts value
 end
